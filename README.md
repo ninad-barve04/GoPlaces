@@ -1,6 +1,7 @@
 # GoPlaces
 
-GoPlaces is a companion app for tourists new to a city. The app gets the location of your device and provides suggestions of places of touristic interests nearest you.
+For a visitor in new city/town it’s hard to find places worth visit and explore the city by visiting the locations that are the centre of attraction.  
+So here is the solution.. GoPlaces, an app which acts as guide for you by suggesting the places nearby that are worth a visit, also provides information about the place along with images for you to decide whether to visit it or not. Provides the functionality of rating and liking the place which will be helpful for other users.
 
 ## Getting Started
 
@@ -27,11 +28,20 @@ You can add the places of interest in your My Places list using the Visit Later 
 
 ### Lets Go
 
-The Lets Go... option gives you a line giving directions from your current location to the selected destination
+The Lets Go... option provides you a route/directions to visit the selected place.
 
 ### Make a trip for me
 
 Another exiting feature of this app is that it will give you a custom itenarary for a city tour. The order is determined by the nearest point of interest from your current loaction and subsequent nearest locations.
+
+## Languages used
+
+- Backend: Python Flask
+- SQLite3 for database
+- AWS EC2 Linux virtual machine for database and Flask App
+- Mobile App (Frontend): Flutter
+  - Cross platform mobile framework (Android + iOS + Web)
+  - Currently, maps api is not supported on flutter web platform
 
 ## To run g.dart file creation
 
@@ -47,4 +57,10 @@ flutter pub run flutter_launcher_icons:main
 ## TODOs
 
 - Add audio guide
-
+- Pre-planned itinerary for city tour
+- Generating suggestions:
+  - Based on location types user visited in past
+  - Based on popularity of places near current location
+- Social Media features
+  - Check-in: Visited this place status on social media
+  - Share reviews on social media
